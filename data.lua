@@ -54,7 +54,7 @@ data:extend({
     {
         type = "recipe",
         name = "tiberium-asteroid-remote",
-        category = "advanced-crafting",
+        categories = { "advanced-crafting" },
         ingredients = {
             { type = "item",  name = "tiberium-blue-explosives", amount = 500 },
             { type = "item",  name = "tiberium-ore",             amount = 5000 },

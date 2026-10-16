@@ -3,7 +3,7 @@ data:extend({
         type = "recipe",
         name = "tiberium-asteroid-crushing",
         icon = "__tiberium-asteroids__/graphics/icons/tiberium-asteroid-crushing.png",
-        category = "crushing",
+        categories = { "crushing" },
         subgroup = "space-crushing",
         order = "b-a-t",
         auto_recycle = false,
@@ -16,7 +16,7 @@ data:extend({
         results =
         {
             { type = "item", name = "tiberium-ore",            amount = 20 },
-            { type = "item", name = "tiberium-asteroid-chunk", amount = 1, probability = 0.2 }
+            { type = "item", name = "tiberium-asteroid-chunk", amount = 1, independent_probability = 0.2 }
         },
         allow_productivity = true,
         allow_decomposition = false
@@ -26,7 +26,7 @@ data:extend({
         name = "advanced-tiberium-asteroid-crushing",
         localised_name = { "recipe-name.advanced-tiberium-asteroid-crushing" },
         icon = "__tiberium-asteroids__/graphics/icons/advanced-tiberium-asteroid-crushing.png",
-        category = "crushing",
+        categories = { "crushing" },
         subgroup = "space-crushing",
         order = "c-a-t",
         auto_recycle = false,
@@ -39,8 +39,8 @@ data:extend({
         results =
         {
             { type = "item", name = "tiberium-ore",            amount = 15 },
-            { type = "item", name = "tiberium-ore-blue",       amount = 10, probability = 0.1 },
-            { type = "item", name = "tiberium-asteroid-chunk", amount = 1,  probability = 0.05 }
+            { type = "item", name = "tiberium-ore-blue",       amount = 10, independent_probability = 0.1 },
+            { type = "item", name = "tiberium-asteroid-chunk", amount = 1,  independent_probability = 0.05 }
         },
         allow_productivity = true,
         allow_decomposition = false
